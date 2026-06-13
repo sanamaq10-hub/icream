@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login - iCREAM</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* Page Background Image */
+body {
+    background: url("img/login.webp") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/* Dark overlay for better readability */
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Styling */
+.login-card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Header Pink + Light Blue mix */
+.card-header {
+    background: linear-gradient(45deg, #ff4da6, #4dc3ff);
+    color: white;
+}
+
+/* Button Pink */
+.btn-custom {
+    background: #ff4da6;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #e60073;
+    transform: scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<div class="container d-flex align-items-center justify-content-center" style="min-height:100vh;">
+
+    <div class="col-md-5">
+
+        <div class="card login-card shadow">
+
+            <div class="card-header text-center">
+                <h3>Login</h3>
+            </div>
+
+            <div class="card-body bg-white">
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom btn-block text-white">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="text-center mt-3">
+                    Don't have an account?
+                    <a href="signup.html">Sign Up</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Login Successful!");
+    window.location.href = "index.html";
+});
+</script>
+
+</body>
+</html>

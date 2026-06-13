@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>iCREAM - Ice Cream Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+
+/* Background Image */
+body {
+    background: url("img/signup.webp") no-repeat center center/cover;
+    min-height: 100vh;
+    margin-top: 0%;
+}
+
+/* Dark overlay */
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Style */
+.signup-card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Header Gradient (Pink + Light Blue) */
+.card-header {
+    background: linear-gradient(45deg, #ff4da6, #4dc3ff);
+    color: white;
+}
+
+/* Button Pink */
+.btn-custom {
+    background: #ff4da6;
+    border: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-custom:hover {
+    background: #e60073;
+    transform: scale(1.05);
+}
+
+
+</style>
+
+
+<body>
+      <!-- Topbar Start -->
+<div class="container-fluid bg-primary py-3 d-none d-md-block">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Side Links -->
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+
+                    <a class="text-white pr-3" href="faq.html">FAQs</a>
+
+                    <span class="text-white">|</span>
+
+                    <a class="text-white px-3" href="help.html">Help</a>
+
+                    <span class="text-white">|</span>
+
+                    <a class="text-white pl-3" href="support.html">Support</a>
+
+                </div>
+            </div>
+
+            <!-- Right Side Social Icons -->
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+
+                    <!-- Facebook -->
+                    <a class="text-white px-3" 
+                       href="https://www.facebook.com/" 
+                       target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="text-white px-3" 
+                       href="https://twitter.com/" 
+                       target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a class="text-white px-3" 
+                       href="https://www.linkedin.com/" 
+                       target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="text-white px-3" 
+                       href="https://www.instagram.com/" 
+                       target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a class="text-white pl-3" 
+                       href="https://www.youtube.com/" 
+                       target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link">Product</a>
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+   
+
+    <br><br>
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- Signup Box -->
+<div class="container d-flex align-items-center justify-content-center" style="min-height:100vh;">
+
+    <div class="col-md-6">
+
+        <div class="card signup-card shadow">
+
+            <!-- Header -->
+            <div class="card-header text-center">
+                <h3>Sign Up</h3>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body bg-white">
+
+                <form id="signupForm">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom btn-block">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p class="text-center mt-3">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+     
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+<!-- JS -->
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert("🎉 Account Created Successfully!");
+
+    window.location.href = "login.html";
+});
+</script>
+
+</body>
+
+</html>
